@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>블로그</title>
+        <meta charset="UTF-8">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            header{
+                background-color: #7cb6e6;
+                padding: 35px;
+                text-align: center;
+                font-size: 35px;
+                color:antiquewhite;
+            }
+            nav{
+                float: left;
+                width: 30%;
+                height: 300px;
+                background: #4341c9;
+                padding: 20px;
+            }
+            nav ul{
+                list-style: none;
+                padding : 0;
+                text-align:center;
+            }
+            article{
+                float: left;
+                padding: 20px;
+                width: 70%;
+                background-color: #435ce7cb;
+                height: 300px;
+                text-align:center;
+            }
+            section::after{
+                content: "";
+                display: table;
+                clear: both;
+                
+            }
+            footer{
+                background-color: #6896eccb;
+                padding: 10px;
+                text-align: center ;
+                color: aliceblue;
+
+
+                
+            }
+            @media (max-width:600px){
+                nav,article{
+                    width: 100px;
+                    height:auto;
+                }
+            }
+            button{
+                background-color: rgb(167, 158, 250);
+            }
+        </style>
+    </head>
+<body>
+    <h2> Blog</h2>
+    <p>안녕하세요.</p>
+    <header>
+        <h2>잠</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li>tag</li>
+                <li>tag1</li>
+                <li>tag2</li>
+            </ul>
+        </nav>
+        <article>
+            <h1>잠</h1>
+            <p>잠만 자고 싶다.<br><br>
+            잠이 최고다. 
+            <br>
+            <br>
+            <textarea placeholder="하고 싶은 말"></textarea>
+            <br>
+            <br>
+            <button type="submit" id="post-button">댓글 작성</button>
+            </p>
+        </article> 
+   
+            
+
+    </section>
+    <footer>
+        <p> ꉂꉂ(ᴖᗜᴖ*)</p>
+    </footer>
+</body>
+</html>

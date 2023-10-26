@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="commentssheet"type="text/css" href="./css/comments.css">
         <title>블로그</title>
         <meta charset="UTF-8">
         <style>
@@ -8,7 +9,7 @@
                 box-sizing: border-box;
             }
             header{
-                background-color: #7cb6e6;
+                background-color: #4e54c8;
                 padding: 35px;
                 text-align: center;
                 font-size: 35px;
@@ -18,37 +19,41 @@
                 float: left;
                 width: 30%;
                 height: 300px;
-                background: #4341c9;
+                background:linear-gradient(#4e54c8,#8f94fb);
                 padding: 20px;
             }
             nav ul{
                 list-style: none;
                 padding : 0;
                 text-align:center;
+                
             }
             article{
+                background:#8f94fb;
                 float: left;
                 padding: 20px;
                 width: 70%;
-                background-color: #435ce7cb;
+               
                 height: 300px;
                 text-align:center;
+                border: 10px;
             }
             section::after{
                 content: "";
                 display: table;
                 clear: both;
+                text-align:center;
                 
             }
             
             footer{
-                background-color: #6896eccb;
+                background-color: #6692cc;
                 padding: 10px;
                 text-align: center ;
-                color: aliceblue;
+                color: rgb(2, 17, 31);
 
 
-                
+
             }
             @media (max-width:600px){
                 nav,article{
@@ -57,7 +62,7 @@
                 }
             }
             button{
-                background-color: rgb(167, 158, 250);
+                background-color: #8f94fb;
             }
         </style>
     </head>
@@ -65,14 +70,21 @@
     <h2> Blog</h2>
     <p>안녕하세요.</p>
     <header>
-        <h2>잠</h2>
+        <div class> 
+            
+            <img src="./잠자기.jpg" width="1000",height="1200":>
+        
+        </div>
+       
     </header>
     <section>
         <nav>
             <ul>
-                <li>tag</li>
-                <li>tag1</li>
-                <li>tag2</li>
+                <li>잠자는 방법</li>
+                <br>
+                <li>수면 패턴</li>
+                <br>
+                <li>강제 수면</li>
             </ul>
         </nav>
         <article>
@@ -82,8 +94,7 @@
             <br>
             <br>
             <textarea placeholder="하고 싶은 말"></textarea>
-            <br>
-            <br>
+            
             <button type="submit" id="post-button">댓글 작성</button>
             </p>
         </article> 
@@ -92,7 +103,7 @@
 
     </section>
     <footer>
-        <p> ꉂꉂ(ᴖᗜᴖ*)</p>
+         <p> ꉂꉂꉂ(ᴖᗜᴖ*)</p>
     </footer>
 </body>
 </html>

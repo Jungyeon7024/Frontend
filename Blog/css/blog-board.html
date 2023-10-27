@@ -48,8 +48,33 @@
                 <p>게시일 : ${date.toLocaleString()}</p>
 
                 `;
-                posts.appendChild(postDiv);
 
+
+
+                //삭제 버튼 생성
+                 const deleteButton = document.createElement("button");
+                    deleteButton.classList.add("delete-button");
+                    deleteButton.innerHTML = " 삭제하기";
+                    deleteButton.addEventListener("click",()  => {
+                        postArray.splice(postArray.indexOf(post),1);
+                        posts.removeChild(postDiv);
+                        
+                    });
+
+
+                    const commentsForm =document.createElement("form");
+                    commentsForm.innerHTML =`
+                        <input type= "text" name ="commment" palceholder ="댓글추가하기">
+                        <button type = "submit"> 게시 </button>
+                    
+                    `;
+
+
+                post.appendChild(deleteButton);
+                postDiv.appendChild(commentsForm);
+                posts.appendChild(postDiv);
+                
+                
             })
         </script>
     </body>
